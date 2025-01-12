@@ -1,6 +1,10 @@
 @import "abstracts/variables";
+@import "abstracts/extends";
 
 @import "base/base";
+@import "base/typography";
+
+@import "components/feature";
 
 @import "layout/header";
 @import "layout/footer";
