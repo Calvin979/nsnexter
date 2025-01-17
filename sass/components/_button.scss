@@ -40,4 +40,17 @@
     &::after {
         transform: translateY(1.3rem);
     }
+
+    @include responsive(large) {
+        margin-top: 0;
+        margin-right: 2.5rem;
+
+        &::before {
+            transform: translateY(-1.2rem);
+        }
+    
+        &::after {
+            transform: translateY(1rem);
+        }
+    }
 }
