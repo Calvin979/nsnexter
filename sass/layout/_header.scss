@@ -13,6 +13,14 @@
     grid-row-gap: 1.5rem;
     justify-content: center;
 
+    @include responsive(medium) {
+        grid-column: 1 / -1;
+    }
+
+    @include responsive(small) {
+        padding: 5rem;
+    }
+
     &__logo {
         justify-self: center;
 

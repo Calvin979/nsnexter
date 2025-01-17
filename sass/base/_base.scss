@@ -34,4 +34,9 @@ body {
         // reasonable: 1100px ~ 1200px in total
         grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
     }
+
+    // rest rows are defined as min-content by default
+    @include responsive(medium) {
+        grid-template-rows: 6rem calc(100vh - 6rem);
+    }
 }
